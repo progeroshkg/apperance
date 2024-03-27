@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: $font-main;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+}
+
+a {
+    color: $white;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+
+    &--sm {
+        max-width: 840px;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.visually-hidden {
+    /* Contain text within 1px box */
+	height: 1px;
+	overflow: hidden;
+	width: 1px;
+
+	/* Keep the layout */
+	position: absolute;
+
+	/* Remove any visible trace (e.g. background color) */
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%); /* browsers in the future */
+
+	/* Prevent the screen reader to skip spaces between words */
+	white-space: nowrap;
+}
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
+}
+
+.link-bold {
+    color: $accent;
+    font-weight: 700;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+
+
+.header-social {
+    position: fixed;
+    right: 20px;
+    bottom: 2%;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-social__links {
+    margin: 1px 0;
+}
+.header-social__icons {
+    padding: 10px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    height: 42px;
+    width: 42px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.insta-icon {
+    background: #c32aa3;
+}
+.tg-icon {
+    background: #28a8e9;
+}
+.whats-icon {
+    background: #09c326;
+}
+.tt-icon {
+    background: #202124;
+}
+
+.header-social__icons:hover {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -webkit-animation: 1.2s ease-in-out 0s normal none infinite running
+        trambling-animation;
+    -moz-animation: 1.2s ease-in-out 0s normal none infinite running
+        trambling-animation;
+    -o-animation: 1.2s ease-in-out 0s normal none infinite running
+        trambling-animation;
+    animation: 1.2s ease-in-out 0s normal none infinite running
+        trambling-animation;
+}
+@keyframes trambling-animation {
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    10%,
+    30% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+    }
+    20%,
+    40% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+    }
+}
+
+
+
+
+
+
+.success{
+    text-align: center;
+    color: #09c326;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+/* Common styles for both desktop and mobile */
+.ouradvantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .ouradvantage-info {
+    text-align: center;
+  }
+  
+  .ouradvantage-info ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .ouradvantage-info ol > li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .ouradvantage-info ol > li:before {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgb(21, 255, 0);
+    margin-right: 10px;
+  }
+  
+  /* Add styles for the unordered list */
+  /* Common styles for both desktop and mobile */
+  .ouradvantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .ouradvantage-info {
+    text-align: center;
+  }
+  
+  .ouradvantage-info ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .ouradvantage-info ol > li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .ouradvantage-info ol > li:before {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgb(21, 255, 0);
+    margin-right: 10px;
+  }
+  
+  /* Add styles for the unordered list */
+  ul {
+    list-style-image: url(//www.gravatar.com/avatar/8b4273496314d7933622f4501dfdaac8?s=16&d=identicon&r=PG&f=1);
+    line-height: 24px;
+    padding-left: 40px;
+  }
+  
+  .side-image {
+    width: 300px;
+    max-width: 100%; /* Set max-width to 100% for responsiveness */
+    margin-right: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .ouradvantage {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .side-image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .ouradvantage-info ol > li {
+      padding-left: 20px;
+    }
+  
+    .ouradvantage-info ol > li:before {
+      margin-right: 5px;
+    }
+  }
+  
